@@ -1,6 +1,6 @@
 import React from 'react';
-import Rating from './Rating';
-import { Container, Header, Content, Button, Text } from 'native-base';
+import { Container, Header, Content, Body, Title } from 'native-base';
+import ProductList from './ProductList';
 
 export default function App() {
 
@@ -8,13 +8,13 @@ export default function App() {
 
   return (
     <Container>
-      <Header />
+      <Header>
+        <Body>
+          <Title>List of Products</Title>
+        </Body>      
+      </Header>      
       <Content>
-        <Rating rating='1' />
-        <Rating rating='2' />
-        <Rating rating='3' />
-        <Rating rating='4' />
-        <Rating rating='5' />   
+        <ProductList />
       </Content>
     </Container>
   );
